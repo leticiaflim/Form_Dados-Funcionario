@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTS - Desenvolvimento</title>
+        <style>
+
+            body {
+                font-family: Arial, sans-serif;
+                color: #f0f0f0;
+                margin: 0;
+                padding: 20px;
+                background-color: #f0f0f0;
+                background-size: cover;
+                background-position: center;
+                height: 100vh;
+                background-image: url(https://4kwallpapers.com/images/wallpapers/spider-man-across-1366x768-11476.png);
+            }
+
+            h1 {
+                text-align: center;
+                color: #ffffff;
+            }
+
+            legend{
+                text-align: center;
+                color: rgb(255, 255, 255);
+            }
+
+            form {
+                max-width: 500px;
+                margin: 0 auto;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(5px);
+            }
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+                color: #fdfdfd;
+            }
+            
+            input[type="text"],
+            input[type="date"],
+            select {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+
+            input[type="checkbox"] {
+                margin-top: 5px;
+            }
+
+            input[type="submit"], input[type="reset"] {
+                background-color: #ec09c7;
+                color: #fffdfd;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            input[type="submit"]:hover,
+            input[type="reset"]:hover  {
+                background-color: #7a0e74;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>HTS - Desenvolvimento</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Dados do Funcionário</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome" required>
+
+                <label for="cargo">Cargo:</label>
+                <input type="text" id="cargo" name="cargo" required>
+
+                <label for="data_admissao">Data de Admissão:</label>
+                <input type="date" id="data_admissao" name="data_admissao" required>
+
+                <label for="salario">Salário:</label>
+                <input type="text" id="salario" name="salario" value="R$0,00" required>
+
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="">Selecione...</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                Ativo:
+                <input type="checkbox" id="ativo" name="ativo" checked><br><br>
+
+                <label for="observacao">Observação:</label>
+                <textarea id="observacao" name="observacao" rows="5" cols="60"></textarea>
+                <br><br>
+                <center>
+                    <input type="submit" name="enviar" value="Enviar">
+                    <input type="reset" name="limpar" value="Limpar">
+                </center>
+            </fieldset>
+        </form>
+    </body>
+</html>
